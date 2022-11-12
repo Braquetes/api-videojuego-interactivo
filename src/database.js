@@ -2,7 +2,6 @@ const mysql = require("mysql");
 const fs = require('fs');
 
 const mysqlConnection = mysql.createConnection({
-
     // host: 'localhost',
     // user: 'root',
     // password: '',
@@ -14,7 +13,6 @@ const mysqlConnection = mysql.createConnection({
   database:"videojuego",
   port:3306,
   ssl:{ca:fs.readFileSync("DigiCertGlobalRootCA.crt.pem")}
-
 });
 
 mysqlConnection.connect(function(err) {
